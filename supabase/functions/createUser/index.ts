@@ -61,14 +61,14 @@ Deno.serve(async (req: Request) => {
     return new Response('User information updated successfully', { status: 200 });
   } else {
     // Email does not exist, create a new user
-    const { data, error } = await supabase
+    const { error } = await supabase
       .from('users')
       .insert([{ username, email, age }]);
 
     if (error) {
       return new Response('Error creating user', { status: 500 });
     }
-    return new Response(`User created successfull ${data}`, { status: 201 });
+    return new Response(`User created successfull ${username} ${email} ${age}`, { status: 201 });
   }
  
 });
