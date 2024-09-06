@@ -24,7 +24,13 @@ Deno.serve(async (req: Request) => {
      return new Response('Error select user', { status: 500 });
   }
 
-  return new Response(`${data}`, { status: 201 });
+  return new Response(JSON.stringify(data), {
+    status: 201,
+    headers: {
+        'Content-Type': 'application/json'
+    }
+  });
+  
  
 });
 

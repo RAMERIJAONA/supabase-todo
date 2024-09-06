@@ -43,3 +43,9 @@ $ locally we can create user with http://localhost:54321/functions/v1/createUser
  	"age": 30
 }
 ```
+```bash
+
+#test the api
+$ locally we can get user with http://localhost:54321/functions/v1/getUsers and remote https://naeiqwtydbstpdqoagsd.supabase.co/functions/v1/getUsers 
+```
+
