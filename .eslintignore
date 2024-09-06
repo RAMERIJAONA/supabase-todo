@@ -1,0 +1,11 @@
+node_modules
+coverage
+build
+dist
+iota
+logs
+.vscode
+.idea
+
+pacman-*
+__test__/**/*.js
