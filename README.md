@@ -36,7 +36,7 @@ $ npm run serve
 ```bash
 
 #test the api
-$ locally we can create user with http://localhost:54321/functions/v1/createUser and the body like 
+$ locally we can create user with http://localhost:54321/functions/v1/createUser and remote https://naeiqwtydbstpdqoagsd.supabase.co/functions/v1/createUser body like 
  {
 	"username": "John", 
  	"email": "john@doe.com", 
