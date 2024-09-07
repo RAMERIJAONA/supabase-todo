@@ -18,6 +18,14 @@ max_rows = 1000
 [api.tls]
 enabled = false
 
+#for locally test
+[functions.createUser]
+verify_jwt = false
+
+#for locally test
+[functions.getUsers]
+verify_jwt = false
+
 [db]
 # Port to use for the local database URL.
 port = 54322
